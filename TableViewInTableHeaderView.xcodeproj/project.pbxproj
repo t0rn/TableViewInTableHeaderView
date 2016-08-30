@@ -12,6 +12,7 @@
 		33123C891D7602C700C074D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33123C871D7602C700C074D7 /* Main.storyboard */; };
 		33123C8B1D7602C700C074D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33123C8A1D7602C700C074D7 /* Assets.xcassets */; };
 		33123C8E1D7602C700C074D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33123C8C1D7602C700C074D7 /* LaunchScreen.storyboard */; };
+		33123C961D76038200C074D7 /* InnerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33123C951D76038200C074D7 /* InnerTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		33123C8A1D7602C700C074D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33123C8D1D7602C700C074D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33123C8F1D7602C700C074D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33123C951D76038200C074D7 /* InnerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InnerTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				33123C831D7602C700C074D7 /* AppDelegate.swift */,
 				33123C851D7602C700C074D7 /* ViewController.swift */,
+				33123C951D76038200C074D7 /* InnerTableViewController.swift */,
 				33123C871D7602C700C074D7 /* Main.storyboard */,
 				33123C8A1D7602C700C074D7 /* Assets.xcassets */,
 				33123C8C1D7602C700C074D7 /* LaunchScreen.storyboard */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33123C961D76038200C074D7 /* InnerTableViewController.swift in Sources */,
 				33123C861D7602C700C074D7 /* ViewController.swift in Sources */,
 				33123C841D7602C700C074D7 /* AppDelegate.swift in Sources */,
 			);
