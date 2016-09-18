@@ -43,7 +43,7 @@ extension UITableView {
     
     func resizeTableHeaderView(){
         if let headerView = self.tableHeaderView {
-            let height = headerView.systemLayoutSizeFittingSize(UILayoutFittingCompressedSize).height
+            let height = headerView.systemLayoutSizeFitting(UILayoutFittingCompressedSize).height
             var frame = headerView.frame
             frame.size.height = height
             headerView.frame = frame
@@ -57,14 +57,14 @@ extension UITableView {
 
 extension ViewController: UITableViewDataSource {
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
-        cell.textLabel?.text = "dynamic cell row \(indexPath.row)"
+        cell.textLabel?.text = "dynamic cell row \((indexPath as NSIndexPath).row)"
         
         return cell
     }
